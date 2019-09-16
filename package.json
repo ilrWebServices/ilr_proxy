@@ -1,0 +1,27 @@
+{
+  "name": "ilr_proxy",
+  "version": "1.0.0",
+  "description": "A simple nodejs proxy for ilr.cornell.edu",
+  "author": "Jeff Amaral <jeff.amaral@cornell.edu>",
+  "license": "MIT",
+  "homepage": "https://github.com/ilrWebServices/ilr_proxy#readme",
+  "bugs": {
+    "url": "https://github.com/ilrWebServices/ilr_proxy/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ilrWebServices/ilr_proxy.git"
+  },
+  "dependencies": {
+    "http-proxy": "^1.17.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.2"
+  },
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
