@@ -17,13 +17,11 @@
     "http-proxy": "^1.17.0",
     "pm2": "^3.5.1"
   },
-  "devDependencies": {
-    "nodemon": "^1.19.2"
-  },
+  "devDependencies": {},
   "main": "server.js",
   "scripts": {
     "start": "pm2 start server.js --no-daemon",
-    "dev": "nodemon",
+    "dev": "pm2 start server.js --no-daemon --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
