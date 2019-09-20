@@ -10,16 +10,19 @@ var proxy = httpProxy.createProxyServer({
 });
 
 var server = http.createServer(function(req, res) {
-  // This is a test.
+  let proxy_opts = {};
+
+  // D8 site.
+  if (req.url.startsWith('/programs/professional-programs') || req.url.startsWith('/core')) {
+    proxy_opts.target = 'https://d8.master-7rqtwti-yf4o2w34wqxm6.us-2.platformsh.site';
+  }
+
+  // This is a test to proxy the registration site.
   if (req.url.startsWith('/registration')) {
-    proxy.web(req, res, {
-      target: 'https://register.ilr.cornell.edu'
-    });
+    proxy_opts.target = 'https://register.ilr.cornell.edu';
   }
-  // Use the default proxy settings.
-  else {
-    proxy.web(req, res);
-  }
+
+  proxy.web(req, res, proxy_opts);
 });
 
 console.log("listening on port " + process.env.PORT)
