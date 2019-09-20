@@ -8,6 +8,8 @@ Eventially, we will be able to transition to other D8 content, and eventually se
 
 ## Setup
 
+Copy `.env.example` to `.env` and configure as needed.
+
 ```
 nvm use      # If you use nvm. Otherwise, ensure you use node.js v10.x
 npm install

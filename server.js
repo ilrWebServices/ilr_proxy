@@ -1,5 +1,6 @@
-var http = require('http'),
-    httpProxy = require('http-proxy');
+const http = require('http'),
+    httpProxy = require('http-proxy'),
+    dotenv = require('dotenv').config();
 
 var proxy = httpProxy.createProxyServer({
   // This would default to d7.ilr.cornell.edu
@@ -21,5 +22,5 @@ var server = http.createServer(function(req, res) {
   }
 });
 
-console.log("listening on port 9700")
-server.listen(9700);
+console.log("listening on port " + process.env.PORT)
+server.listen(process.env.PORT);
