@@ -13,7 +13,7 @@ var server = http.createServer(function(req, res) {
   let proxy_opts = {};
 
   // D8 site.
-  if (req.url.startsWith('/programs/professional-programs') || req.url.startsWith('/core') || req.url.startsWith('/libraries/union') || req.url.startsWith('/themes/custom/union_marketing')) {
+  if (req.url.startsWith('/programs/professional-programs') || req.url.startsWith('/core') || req.url.startsWith('/libraries/union') || req.url.startsWith('/themes/custom/union_marketing') || req.url.startsWith('/sites/default/files-d8')) {
     proxy_opts.target = 'https://d8.master-7rqtwti-yf4o2w34wqxm6.us-2.platformsh.site';
   }
 
