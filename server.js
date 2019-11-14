@@ -23,6 +23,15 @@ var server = http.createServer(function(req, res) {
     proxy_opts.target = 'https://register.ilr.cornell.edu';
   }
 
+  // Add a header to the response to help with debugging the source of this
+  // proxied request.
+  if (typeof proxy_opts.target !== 'undefined') {
+    res.setHeader('X-ILR-Proxy-Source', '<' + proxy_opts.target + '>');
+  }
+  else {
+    res.setHeader('X-ILR-Proxy-Source', '<' + proxy.options.target + '>');
+  }
+
   proxy.web(req, res, proxy_opts);
 });
 
