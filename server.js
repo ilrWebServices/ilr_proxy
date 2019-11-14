@@ -7,6 +7,7 @@ var proxy = httpProxy.createProxyServer({
   target: 'https://www.sandbox-w6wvm5a-dd2imk5jkez6q.us-2.platformsh.site/',
   changeOrigin: true,
   autoRewrite: true,
+  preserveHeaderKeyCase: true,
   xfwd: true
 });
 
