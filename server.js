@@ -3,8 +3,7 @@ const http = require('http'),
     dotenv = require('dotenv').config();
 
 var proxy = httpProxy.createProxyServer({
-  // This would default to d7.ilr.cornell.edu
-  target: 'https://www.sandbox-w6wvm5a-dd2imk5jkez6q.us-2.platformsh.site/',
+  target: 'https://www.master-w6wvm5a-dd2imk5jkez6q.us-2.platformsh.site',
   changeOrigin: true,
   autoRewrite: true,
   preserveHeaderKeyCase: true,
