@@ -7,7 +7,8 @@ var proxy = httpProxy.createProxyServer({
   changeOrigin: true,
   autoRewrite: true,
   preserveHeaderKeyCase: true,
-  xfwd: true
+  xfwd: true,
+  cookieDomainRewrite: ""
 });
 
 var server = http.createServer(function(req, res) {
