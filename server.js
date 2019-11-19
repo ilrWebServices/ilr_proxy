@@ -19,11 +19,6 @@ var server = http.createServer(function(req, res) {
     proxy_opts.target = 'https://d8.master-7rqtwti-yf4o2w34wqxm6.us-2.platformsh.site';
   }
 
-  // This is a test to proxy the registration site.
-  if (req.url.startsWith('/registration')) {
-    proxy_opts.target = 'https://register.ilr.cornell.edu';
-  }
-
   // Add a header to the response to help with debugging the source of this
   // proxied request.
   if (typeof proxy_opts.target !== 'undefined') {
