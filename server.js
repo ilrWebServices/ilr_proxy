@@ -15,7 +15,7 @@ var server = http.createServer(function(req, res) {
   let proxy_opts = {};
 
   // D8 site.
-  if (req.url.startsWith('/programs/professional-education') || req.url.startsWith('/programs/professional-programs') || req.url.startsWith('/core') || req.url.startsWith('/libraries/union') || req.url.startsWith('/themes/custom/union_marketing') || req.url.startsWith('/sites/default/files-d8')) {
+  if (req.url.startsWith('/programs/professional-education') || req.url.startsWith('/programs/professional-programs') || req.url.startsWith('/core') || req.url.startsWith('/libraries/union') || req.url.startsWith('/themes/custom/union_marketing') || req.url.startsWith('/sites/default/files-d8') || req.url.startsWith('/media/oembed')) {
     proxy_opts.target = 'https://d8.ilr.cornell.edu';
   }
 
