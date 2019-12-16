@@ -21,7 +21,7 @@
   "main": "server.js",
   "scripts": {
     "start": "pm2 start server.js -i 4 --no-daemon",
-    "dev": "pm2 start server.js -i 4 --no-daemon --watch",
+    "dev": "pm2 start server.js --no-daemon --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
