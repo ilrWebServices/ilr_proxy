@@ -40,7 +40,7 @@ const proxy = httpProxy.createProxyServer({
   cookieDomainRewrite: ""
 });
 
-const server = http.createServer(function(req, res) {
+const server = http.createServer((req, res) => {
   let proxy_opts = {};
 
   // Proxy this request to D8 if the incoming request passes certain criteria.
