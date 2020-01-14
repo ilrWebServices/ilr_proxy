@@ -3,7 +3,7 @@ const http = require('http'),
     url = require('url'),
     dotenv = require('dotenv').config();
 
-const drupal_7_url = 'https://www.master-7rqtwti-dd2imk5jkez6q.us-2.platformsh.site',
+const drupal_7_url = 'https://www.d7.ilr.cornell.edu',
       drupal_8_url = 'https://d8.ilr.cornell.edu';
 
 const should_use_d8 = (req) => {
