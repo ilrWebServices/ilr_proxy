@@ -58,7 +58,10 @@ const server = http.createServer((req, res) => {
     res.setHeader('X-ILR-Proxy-Source', '<' + proxy.options.target + '>');
   }
 
-  proxy.web(req, res, proxy_opts);
+  proxy.web(req, res, proxy_opts, function(e) {
+    // Catch any proxy errors here.
+    console.log(JSON.stringify(e, null, ' '));
+  });
 });
 
 console.log("listening on port " + process.env.PORT)
