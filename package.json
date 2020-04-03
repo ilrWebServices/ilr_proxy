@@ -20,7 +20,7 @@
   "devDependencies": {},
   "main": "server.js",
   "scripts": {
-    "start": "pm2 start server.js -i 4 --no-daemon --max_memory_restart 200M",
+    "start": "pm2 start server.js -i 4 --no-daemon --max-memory-restart 200M",
     "dev": "pm2 start server.js --no-daemon --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   }
