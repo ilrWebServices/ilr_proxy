@@ -17,7 +17,8 @@ const should_use_d8 = (req) => {
           '/libraries/union',
           '/themes/custom/union_marketing',
           '/sites/default/files-d8',
-          '/media/oembed'
+          '/media/oembed',
+          '/modules/contrib/better_social_sharing_buttons/assets'
         ];
 
   // Test the incoming request against the above path prefixes. This will be set
