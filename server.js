@@ -4,7 +4,7 @@ const http = require('http'),
     dotenv = require('dotenv').config();
 
 const drupal_7_url = 'https://d7.ilr.cornell.edu',
-      drupal_8_url = 'https://d8.ilr.cornell.edu';
+      drupal_8_url = 'https://d8-edit.ilr.cornell.edu';
 
 const should_use_d8 = (req) => {
   const req_referer_path = (typeof req.headers.referer !== 'undefined') ? url.parse(req.headers.referer).pathname : '',
