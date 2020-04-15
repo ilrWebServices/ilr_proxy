@@ -11,6 +11,8 @@ const should_use_d8 = (req) => {
         d8_path_prefixes = [
           '/programs/professional-education',
           '/programs/professional-programs',
+          '/work-and-coronavirus',
+          '/news/ilr-news/covid-19',
           '/core',
           '/libraries/union',
           '/themes/custom/union_marketing',
