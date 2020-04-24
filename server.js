@@ -13,6 +13,7 @@ const should_use_d8 = (req) => {
           '/programs/professional-programs',
           '/work-and-coronavirus',
           '/news/ilr-news/covid-19',
+          '/blog',
           '/core',
           '/libraries/union',
           '/themes/custom/union_marketing',
