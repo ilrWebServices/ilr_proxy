@@ -14,6 +14,7 @@ const should_use_d8 = (req) => {
           '/work-and-coronavirus',
           '/news/ilr-news/covid-19',
           '/blog',
+          '/ilrie',
           '/core',
           '/libraries/union',
           '/themes/custom/union_marketing',
