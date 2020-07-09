@@ -13,6 +13,7 @@ const should_use_d8 = (req) => {
           '/programs/professional-programs',
           '/work-and-coronavirus',
           '/news/ilr-news/covid-19',
+          '/worker-institute/blog',
           '/blog',
           '/ilrie',
           '/core',
