@@ -16,6 +16,7 @@ const should_use_d8 = (req) => {
           '/worker-institute/blog',
           '/blog',
           '/ilrie',
+          '/ada30',
           '/core',
           '/libraries/union',
           '/themes/custom/union_marketing',
