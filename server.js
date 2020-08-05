@@ -17,6 +17,7 @@ const should_use_d8 = (req) => {
           '/blog',
           '/ilrie',
           '/ada30',
+          '/75',
           '/core',
           '/libraries/union',
           '/themes/custom/union_marketing',
