@@ -22,6 +22,7 @@ const should_use_d8 = (req) => {
           '/libraries/union',
           '/themes/custom/union_marketing',
           '/sites/default/files-d8',
+          '/system/files/webform',
           '/media/oembed',
           '/modules/contrib/better_social_sharing_buttons/assets'
         ];
