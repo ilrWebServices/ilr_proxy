@@ -19,6 +19,7 @@ const should_use_d8 = (req) => {
           '/ilrie',
           '/ada30',
           '/75',
+          '/ithaca-co-lab',
           '/core',
           '/libraries/union',
           '/themes/custom/union_marketing',
