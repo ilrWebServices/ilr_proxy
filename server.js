@@ -14,7 +14,7 @@ const should_use_d8 = (req) => {
           '/work-and-coronavirus',
           '/news/ilr-news/covid-19',
           '/worker-institute/blog',
-          '/scheinman-institute/blog',
+          '/scheinman-institute',
           '/blog',
           '/ilrie',
           '/ada30',
