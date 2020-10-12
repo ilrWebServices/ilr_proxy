@@ -15,6 +15,7 @@ const should_use_d8 = (req) => {
           '/news/ilr-news/covid-19',
           '/worker-institute/blog',
           '/scheinman-institute',
+          '/current-students',
           '/blog',
           '/ilrie',
           '/ada30',
