@@ -30,7 +30,8 @@ const should_use_d8 = (req) => {
           '/sites/default/files-d8',
           '/system/files/webform',
           '/media/oembed',
-          '/modules/contrib/better_social_sharing_buttons/assets'
+          '/modules/contrib/better_social_sharing_buttons/assets',
+          '/webform'
         ];
 
   // Test the incoming request against the above path prefixes. This will be set
