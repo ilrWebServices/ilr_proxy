@@ -14,6 +14,7 @@ const should_use_d8 = (req) => {
           '/cornell-debate',
           '/course',
           '/work-and-coronavirus',
+          '/new-york-city',
           '/news/ilr-news/covid-19',
           '/worker-institute/blog',
           '/scheinman-institute',
