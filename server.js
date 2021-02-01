@@ -3,8 +3,8 @@ const http = require('http'),
     url = require('url'),
     dotenv = require('dotenv').config();
 
-const drupal_7_url = 'https://d7.ilr.cornell.edu',
-      drupal_8_url = 'https://d8-edit.ilr.cornell.edu';
+const drupal_7_url = process.env.DRUPAL_7_URL ?? 'https://d7.ilr.cornell.edu',
+      drupal_8_url = process.env.DRUPAL_8_URL ?? 'https://d8-edit.ilr.cornell.edu';
 
 const should_use_d8 = (req) => {
   const req_referer_path = (typeof req.headers.referer !== 'undefined') ? url.parse(req.headers.referer).pathname : '',
@@ -84,5 +84,7 @@ const server = http.createServer((req, res) => {
   });
 });
 
-console.log("listening on port " + process.env.PORT)
+console.log("Drupal 7 served from " + drupal_7_url);
+console.log("Drupal 8 served from " + drupal_8_url);
+console.log("listening on port " + process.env.PORT);
 server.listen(process.env.PORT);
