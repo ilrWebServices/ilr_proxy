@@ -7,47 +7,58 @@ const drupal_7_url = process.env.DRUPAL_7_URL ?? 'https://d7.ilr.cornell.edu',
       drupal_8_url = process.env.DRUPAL_8_URL ?? 'https://d8-edit.ilr.cornell.edu';
 
 const should_use_d8 = (req) => {
-  const req_referer_path = (typeof req.headers.referer !== 'undefined') ? url.parse(req.headers.referer).pathname : '',
-        d8_path_prefixes = [
-          '/programs/professional-education',
-          '/programs/professional-programs',
-          '/cornell-debate',
-          '/course',
-          '/work-and-coronavirus',
-          '/new-york-city',
-          '/news/ilr-news/covid-19',
-          '/worker-institute/blog',
-          '/worker-institute/labor-leading-climate',
-          '/scheinman-institute',
-          '/scr-summer-school',
-          '/current-students',
-          '/blog',
-          '/ilrie',
-          '/ada30',
-          '/75',
-          '/ithaca-co-lab',
-          '/new-conversations-project',
-          '/persona',
-          '/core',
-          '/libraries/union',
-          '/themes/custom/union_marketing',
-          '/sites/default/files-d8',
-          '/system/files/webform',
-          '/media/oembed',
-          '/modules/contrib/better_social_sharing_buttons/assets',
-          '/webform'
-        ];
+  // Always use D8 if the path starts with any of the following.
+  const d8_path_prefixes = [
+    '/programs/professional-education',
+    '/programs/professional-programs',
+    '/cornell-debate',
+    '/course',
+    '/work-and-coronavirus',
+    '/new-york-city',
+    '/news/ilr-news/covid-19',
+    '/worker-institute/blog',
+    '/worker-institute/labor-leading-climate',
+    '/scheinman-institute',
+    '/scr-summer-school',
+    '/current-students',
+    '/blog',
+    '/ilrie',
+    '/ada30',
+    '/75',
+    '/ithaca-co-lab',
+    '/new-conversations-project',
+    '/persona',
+    '/core',
+    '/libraries/union',
+    '/themes/custom/union_marketing',
+    '/sites/default/files-d8',
+    '/system/files/webform',
+    '/media/oembed',
+    '/modules/contrib/better_social_sharing_buttons/assets',
+    '/webform'
+  ];
 
-  // Test the incoming request against the above path prefixes. This will be set
-  // to true if the incoming request URL starts with any of the prefixes above.
-  const d8_path_prefix_test = d8_path_prefixes.some((path_prefix) => req.url.startsWith(path_prefix));
+  // Both D7 and D8 use these path prefixes. D8 should only be used if the
+  // referer is one of the D8 prefixes above.
+  const shared_path_prefixes = [
+    '/views/ajax'
+  ];
 
-  // Special test for requests to /views/ajax, which both D7 and D8 respond to.
-  // For this test, the request url must start with /views/ajax and the
-  // _referer_ pathname must start with one of the `d8_path_prefixes`.
-  const d8_views_ajax_test = req.url.startsWith('/views/ajax') && d8_path_prefixes.some((path_prefix) => req_referer_path.startsWith(path_prefix));
+  // Test the incoming request against the D8 path prefixes.
+  if (d8_path_prefixes.some((path_prefix) => req.url.startsWith(path_prefix))) {
+    return true;
+  }
 
-  return d8_path_prefix_test || d8_views_ajax_test;
+  // Test for shared path requests like `/views/ajax`. The request url must
+  // start with one of the `shared_path_prefixes` and the `referer` pathname
+  // must start with one of the `d8_path_prefixes`. Note that this will fail for
+  // browers that disable the referer header.
+  const req_referer_path = (typeof req.headers.referer !== 'undefined') ? url.parse(req.headers.referer).pathname : '';
+  if (shared_path_prefixes.some((path_prefix) => req.url.startsWith(path_prefix)) && d8_path_prefixes.some((path_prefix) => req_referer_path.startsWith(path_prefix))) {
+    return true;
+  }
+
+  return false;
 };
 
 // Create the proxy with a default target of the D7 site.
