@@ -20,8 +20,8 @@
   "devDependencies": {},
   "main": "server.js",
   "scripts": {
-    "start": "pm2 start server.js -i 4 --no-daemon --max-memory-restart 200M",
-    "dev": "pm2 start server.js --no-daemon --watch",
+    "start": "pm2 start server.js -i 4 --no-daemon --max-memory-restart 200M --name web-proxy",
+    "dev": "pm2 start server.js --no-daemon --watch --name web-proxy",
     "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
