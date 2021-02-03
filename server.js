@@ -12,6 +12,7 @@ const should_use_d8 = (req) => {
     '/programs/professional-education',
     '/programs/professional-programs',
     '/cornell-debate',
+    '/cjei',
     '/course',
     '/work-and-coronavirus',
     '/new-york-city',
