@@ -14,6 +14,7 @@ const should_use_d8 = (req) => {
     '/cornell-debate',
     '/cjei',
     '/course',
+    '/diversity-equity-and-inclusion',
     '/work-and-coronavirus',
     '/new-york-city',
     '/news/ilr-news/covid-19',
