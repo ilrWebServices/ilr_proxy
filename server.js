@@ -7,6 +7,13 @@ const drupal_7_url = process.env.DRUPAL_7_URL ?? 'https://d7.ilr.cornell.edu',
       drupal_8_url = process.env.DRUPAL_8_URL ?? 'https://d8-edit.ilr.cornell.edu';
 
 const should_use_d8 = (req) => {
+  // Always use D8 for the home page, but not automatically for paths starting
+  // with just a slash. Note that even if the user omits the initial `/`, the
+  // request will include it, as required by RFC 2616 section 5.1.2.
+  if (req.url === '/') {
+    return true;
+  }
+
   // Always use D8 if the path starts with any of the following.
   const d8_path_prefixes = [
     '/programs/professional-education',
