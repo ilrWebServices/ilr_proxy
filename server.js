@@ -17,7 +17,7 @@ const should_use_d8 = (req) => {
     '/diversity-equity-and-inclusion',
     '/work-and-coronavirus',
     '/new-york-city',
-    '/news/ilr-news/covid-19',
+    '/news',
     '/worker-institute/blog',
     '/worker-institute/labor-leading-climate',
     '/scheinman-institute',
