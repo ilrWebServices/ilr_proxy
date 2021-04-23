@@ -25,6 +25,7 @@ const should_use_d8 = (req) => {
     '/work-and-coronavirus',
     '/new-york-city',
     '/news',
+    '/public-impact',
     '/worker-institute/blog',
     '/worker-institute/labor-leading-climate',
     '/scheinman-institute',
