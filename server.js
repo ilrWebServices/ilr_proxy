@@ -21,6 +21,7 @@ const should_use_d8 = (req) => {
     '/buffalo-co-lab',
     '/cornell-debate',
     '/cjei',
+    '/coronavirus',
     '/course',
     '/diversity-equity-and-inclusion',
     '/work-and-coronavirus',
