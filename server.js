@@ -18,6 +18,7 @@ const should_use_d8 = (req) => {
   const d8_path_prefixes = [
     '/programs/professional-education',
     '/programs/professional-programs',
+    '/alumni',
     '/buffalo-co-lab',
     '/cornell-debate',
     '/cjei',
