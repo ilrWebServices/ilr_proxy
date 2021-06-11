@@ -15,7 +15,7 @@
   "dependencies": {
     "dotenv": "^8.2.0",
     "http-proxy": "^1.18.1",
-    "pm2": "^4.5.4"
+    "pm2": "^5.1.0"
   },
   "devDependencies": {},
   "main": "server.js",
