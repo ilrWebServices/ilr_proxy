@@ -66,7 +66,7 @@ const should_use_d8 = (req) => {
   // Test for shared path requests like `/views/ajax`. The request url must
   // start with one of the `shared_path_prefixes` and the `referer` pathname
   // must start with one of the `d8_path_prefixes`. Note that this will fail for
-  // browers that disable the referer header.
+  // browsers that disable the referer header.
   const req_referer_path = (typeof req.headers.referer !== 'undefined') ? new URL(req.headers.referer).pathname : '';
   if (shared_path_prefixes.some((path_prefix) => req.url.startsWith(path_prefix)) && d8_path_prefixes.some((path_prefix) => req_referer_path.startsWith(path_prefix))) {
     return true;
