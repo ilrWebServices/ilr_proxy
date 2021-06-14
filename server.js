@@ -10,7 +10,7 @@ const should_use_d8 = (req) => {
   // Always use D8 for the home page, but not automatically for paths starting
   // with just a slash. Note that even if the user omits the initial `/`, the
   // request will include it, as required by RFC 2616 section 5.1.2.
-  if (req.url === '/') {
+  if (req.url === '/' || req.url.startsWith('/?')) {
     return true;
   }
 
