@@ -49,7 +49,8 @@ const should_use_d8 = (req) => {
     '/sites/default/files-d8',
     '/system/files/webform',
     '/media/oembed',
-    '/modules/contrib/better_social_sharing_buttons/assets',
+    '/modules/contrib',
+    '/modules/custom',
     '/webform'
   ];
 
