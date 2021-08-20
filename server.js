@@ -27,6 +27,7 @@ const should_use_d8 = (req) => {
     '/coronavirus',
     '/course',
     '/diversity-equity-and-inclusion',
+    '/expo',
     '/work-and-coronavirus',
     '/new-york-city',
     '/news',
