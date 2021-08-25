@@ -20,6 +20,7 @@ const should_use_d8 = (req) => {
     '/programs/professional-programs',
     '/programs/graduate-degree-programs/blog',
     '/programs/graduate-degree-programs/master-industrial-and-labor-relations-milr',
+    '/programs/graduate-degree-programs/emhrm',
     '/alumni',
     '/buffalo-co-lab',
     '/cornell-debate',
