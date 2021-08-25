@@ -21,6 +21,7 @@ const should_use_d8 = (req) => {
     '/programs/graduate-degree-programs/blog',
     '/programs/graduate-degree-programs/master-industrial-and-labor-relations-milr',
     '/programs/graduate-degree-programs/emhrm',
+    '/programs/graduate-degree-programs/executive-master-human-resource-management-emhrm-program',
     '/alumni',
     '/buffalo-co-lab',
     '/cornell-debate',
