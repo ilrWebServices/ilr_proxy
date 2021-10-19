@@ -34,6 +34,8 @@ const should_use_d8 = (req) => {
     '/new-york-city',
     '/news',
     '/public-impact',
+    '/faculty-and-research',
+    '/research',
     '/worker-institute',
     '/scheinman-institute',
     '/scr-summer-school',
