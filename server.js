@@ -48,6 +48,7 @@ const should_use_d8 = (req) => {
     '/75',
     '/ithaca-co-lab',
     '/new-conversations-project',
+    '/labor-and-employment-law-program',
     '/labor-dynamics-institute',
     '/persona',
     '/core',
