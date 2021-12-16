@@ -24,6 +24,7 @@ const should_use_d8 = (req) => {
     '/programs/graduate-degree-programs/executive-master-human-resource-management-emhrm-program',
     '/programs/graduate-degree-programs/doctoral-program/ilr-msphd-students',
     '/programs/graduate-degree-programs/doctoral-program/msphd-students',
+    '/about-ilr',
     '/alumni',
     '/buffalo-co-lab',
     '/cornell-debate',
