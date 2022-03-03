@@ -93,7 +93,11 @@ const proxy = httpProxy.createProxyServer({
   autoRewrite: true,
   preserveHeaderKeyCase: true,
   xfwd: true,
-  cookieDomainRewrite: ""
+  cookieDomainRewrite: {
+    ".ilr.cornell.edu": ".ilr.cornell.edu",
+    ".ilr.test": ".ilr.test",
+    "*": ""
+  }
 });
 
 const server = http.createServer((req, res) => {
