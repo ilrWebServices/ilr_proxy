@@ -47,6 +47,7 @@ const should_use_d8 = (req) => {
     '/ilrie',
     '/ada30',
     '/75',
+    '/institute-for-compensation-studies',
     '/ithaca-co-lab',
     '/new-conversations-project',
     '/labor-and-employment-law-program',
