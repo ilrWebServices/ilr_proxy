@@ -61,7 +61,8 @@ const should_use_d8 = (req) => {
     '/media/oembed',
     '/modules/contrib',
     '/modules/custom',
-    '/webform'
+    '/webform',
+    '/wide'
   ];
 
   // Both D7 and D8 use these path prefixes. D8 should only be used if the
