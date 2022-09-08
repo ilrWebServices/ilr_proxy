@@ -23,6 +23,7 @@ const should_use_d8 = (req) => {
     '/programs/graduate-degree-programs/emhrm',
     '/programs/graduate-degree-programs/executive-master-human-resource-management-emhrm-program',
     '/programs/graduate-degree-programs/doctoral-program',
+    '/programs/undergraduate-admissions',
     '/about-ilr',
     '/academics/academic-departments/human-resource-studies',
     '/alumni',
