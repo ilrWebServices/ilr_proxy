@@ -28,6 +28,7 @@ const should_use_d8 = (req) => {
     '/academics/academic-departments/human-resource-studies',
     '/alumni',
     '/buffalo-co-lab',
+    '/carow',
     '/cornell-debate',
     '/cjei',
     '/coronavirus',
