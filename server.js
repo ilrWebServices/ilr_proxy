@@ -36,6 +36,7 @@ const should_use_d8 = (req) => {
     '/diversity-equity-and-inclusion',
     '/expo',
     '/global-labor-institute',
+    '/hooks/v1',
     '/work-and-coronavirus',
     '/new-york-city',
     '/news',
