@@ -69,7 +69,8 @@ const should_use_d8 = (req) => {
     '/modules/custom',
     '/webform',
     '/wide',
-    '/remembering'
+    '/remembering',
+    '/office-engaged-and-experiential-programs'
   ];
 
   // Both D7 and D8 use these path prefixes. D8 should only be used if the
