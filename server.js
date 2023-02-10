@@ -25,7 +25,7 @@ const should_use_d8 = (req) => {
     '/programs/graduate-degree-programs/doctoral-program',
     '/programs/undergraduate-admissions',
     '/about-ilr',
-    '/academics/academic-departments/human-resource-studies',
+    '/academics',
     '/alumni',
     '/buffalo-co-lab',
     '/carow',
