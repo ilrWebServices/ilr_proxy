@@ -70,7 +70,15 @@ const should_use_d8 = (req) => {
     '/webform',
     '/wide',
     '/remembering',
-    '/office-engaged-and-experiential-programs'
+    '/office-engaged-and-experiential-programs',
+    '/labor-relations',
+    '/conflict-resolution',
+    '/diversity-and-inclusion',
+    '/dei',
+    '/employee-relations',
+    '/employment-law',
+    '/human-resources',
+    '/leadership'
   ];
 
   // Both D7 and D8 use these path prefixes. D8 should only be used if the
