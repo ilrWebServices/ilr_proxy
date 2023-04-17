@@ -16,14 +16,7 @@ const should_use_d8 = (req) => {
 
   // Always use D8 if the path starts with any of the following.
   const d8_path_prefixes = [
-    '/programs/professional-education',
-    '/programs/professional-programs',
-    '/programs/graduate-degree-programs/blog',
-    '/programs/graduate-degree-programs/master-industrial-and-labor-relations-milr',
-    '/programs/graduate-degree-programs/emhrm',
-    '/programs/graduate-degree-programs/executive-master-human-resource-management-emhrm-program',
-    '/programs/graduate-degree-programs/doctoral-program',
-    '/programs/undergraduate-admissions',
+    '/programs',
     '/about-ilr',
     '/academics',
     '/alumni',
