@@ -29,6 +29,7 @@ const should_use_d8 = (req) => {
     '/course',
     '/diversity-equity-and-inclusion',
     '/eform/submit/transfer-offer',
+    '/events',
     '/expo',
     '/global-labor-institute',
     '/hooks/v1',
