@@ -16,6 +16,7 @@ const should_use_d8 = (req) => {
 
   // Always use D8 if the path starts with any of the following.
   const d8_path_prefixes = [
+    '/robots.txt',
     '/programs',
     '/about-ilr',
     '/academics',
