@@ -3,7 +3,7 @@ const http = require('http'),
     url = require('url'),
     dotenv = require('dotenv').config();
 
-const drupal_7_url = process.env.DRUPAL_7_URL ?? 'https://d7.ilr.cornell.edu',
+const drupal_7_url = process.env.DRUPAL_7_URL ?? 'https://d7-edit.ilr.cornell.edu',
       drupal_8_url = process.env.DRUPAL_8_URL ?? 'https://d8-edit.ilr.cornell.edu';
 
 const should_use_d8 = (req) => {
