@@ -43,8 +43,6 @@ const should_use_d8 = (req) => {
     '/worker-institute',
     '/scheinman-institute',
     '/scr-summer-school',
-    '/student-forms/field-shadowing-program-student-application',
-    '/student-forms/career-exploration-project-student-application',
     '/current-students',
     '/blog',
     '/ilrie',
