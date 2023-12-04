@@ -25,6 +25,7 @@ const should_use_d8 = (req) => {
     '/carow',
     '/climate-jobs-institute',
     '/cornell-debate',
+    '/cornell-international-debate-camp',
     '/cjei',
     '/coronavirus',
     '/course',
