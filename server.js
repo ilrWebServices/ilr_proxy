@@ -23,6 +23,7 @@ const should_use_d8 = (req) => {
     '/alumni',
     '/buffalo-co-lab',
     '/carow',
+    '/cahrs',
     '/climate-jobs-institute',
     '/cornell-debate',
     '/cornell-international-debate-camp',
