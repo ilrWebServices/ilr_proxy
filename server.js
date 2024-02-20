@@ -76,7 +76,8 @@ const should_use_d8 = (req) => {
     '/employment-law',
     '/human-resources',
     '/leadership',
-    '/taft-award'
+    '/taft-award',
+    '/job-search-study'
   ];
 
   // Both D7 and D8 use these path prefixes. D8 should only be used if the
