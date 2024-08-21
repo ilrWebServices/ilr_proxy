@@ -56,6 +56,7 @@ const should_use_d8 = (req) => {
     '/labor-relations',
     '/leadership',
     '/libraries/union',
+    '/masters',
     '/media/oembed',
     '/modules/contrib',
     '/modules/custom',
