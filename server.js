@@ -64,6 +64,7 @@ const should_use_d8 = (req) => {
     '/new-york-city',
     '/news',
     '/office-engaged-and-experiential-programs',
+    '/people',
     '/persona',
     '/programs',
     '/public-impact',
