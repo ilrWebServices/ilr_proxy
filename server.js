@@ -51,6 +51,7 @@ const should_use_d8 = (req) => {
     '/institute-for-compensation-studies',
     '/ithaca-co-lab',
     '/job-search-study',
+    '/jobsearchlab',
     '/labor-and-employment-law-program',
     '/labor-dynamics-institute',
     '/labor-relations',
