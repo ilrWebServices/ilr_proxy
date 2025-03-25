@@ -44,6 +44,7 @@ const should_use_d8 = (req) => {
     '/expo',
     '/faculty-and-research',
     '/global-labor-institute',
+    '/high-road',
     '/hooks/v1',
     '/human-resources',
     '/ilr-sponsored-research-office',
