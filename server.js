@@ -21,6 +21,7 @@ const should_use_d8 = (req) => {
     '/academics',
     '/ada30',
     '/alumni',
+    '/apply',
     '/blog',
     '/buffalo-co-lab',
     '/cahrs',
