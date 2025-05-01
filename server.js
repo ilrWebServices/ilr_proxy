@@ -35,6 +35,7 @@ const should_use_d8 = (req) => {
     '/course',
     '/current-students',
     '/dei',
+    '/discover',
     '/diversity-and-inclusion',
     '/diversity-equity-and-inclusion',
     '/eform/submit/transfer-offer',
