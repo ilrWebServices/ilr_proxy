@@ -80,6 +80,7 @@ const should_use_d8 = (req) => {
     '/scheinman-institute',
     '/scr-summer-school',
     '/sites/default/files-d8',
+    '/search',
     '/system/files/webform',
     '/taft-award',
     '/themes/custom/union_marketing',
