@@ -49,6 +49,7 @@ const should_use_d8 = (req) => {
     '/high-road',
     '/hooks/v1',
     '/human-resources',
+    '/ilr-in-buffalo',
     '/ilr-sponsored-research-office',
     '/ilrie',
     '/institute-for-compensation-studies',
