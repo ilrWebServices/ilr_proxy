@@ -67,6 +67,7 @@ const should_use_d8 = (req) => {
     '/media/oembed',
     '/modules/contrib',
     '/modules/custom',
+    '/ncrs',
     '/new-conversations-project',
     '/new-york-city',
     '/news',
