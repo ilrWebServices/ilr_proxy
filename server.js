@@ -52,6 +52,7 @@ const should_use_d8 = (req) => {
     '/ilr-in-buffalo',
     '/ilr-sponsored-research-office',
     '/ilrie',
+    '/ilr-press',
     '/institute-for-compensation-studies',
     '/institute-workplace-studies',
     '/ithaca-co-lab',
